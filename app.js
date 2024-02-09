@@ -54,6 +54,8 @@
 //     img.src = "rhino.jpg";
 // }
 
+
+
 const addingLineBtn = document.getElementById('adding-line-btn');
 addingLineBtn.addEventListener('click',activeAddingLine)
 
@@ -100,3 +102,26 @@ function startDrawingLine (o){
 function stopDrawingLine (){
     mouseDown = false
 }
+
+var circle = new fabric.Circle({
+    radius: 100, fill: '#CCC', left: 200, top: 250
+});
+var circle1 = new fabric.Circle({
+    radius: 20, fill: 'blue', left: 100, top: 100
+});
+var circle2 = new fabric.Circle({
+    radius: 20, fill: 'red', left: 100, top: 100
+});
+
+
+var triangle = new fabric.Triangle({
+    width: 200, height: 100, fill: 'blue', left: 50, top: 50
+});
+
+
+triangle.set({left:1000,top:200})
+triangle.set('fill','red')
+triangle.set({ strokeWidth: 20, stroke: 'rgba(100,200,200,0.5)' })
+triangle.set('angle',0).set('flipY',true)
+
+canvas.add(circle, triangle, circle1, circle2);
