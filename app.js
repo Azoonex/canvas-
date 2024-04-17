@@ -125,3 +125,6 @@ triangle.set({ strokeWidth: 20, stroke: 'rgba(100,200,200,0.5)' })
 triangle.set('angle',0).set('flipY',true)
 
 canvas.add(circle, triangle, circle1, circle2);
+
+
+// chnage ui for contact use chart js
